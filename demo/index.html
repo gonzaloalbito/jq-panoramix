@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en">
+	<head>
+		<title>Panoramix Demo</title>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<meta name="description" content="" />
+		<meta name="author" content="Gonzalo Albito Méndez Rey" />
+		
+		<link rel="stylesheet" type="text/css" href="../jquery-panoramix.css"/>
+		<link rel="stylesheet" type="text/css" href="css/styles.css"/>
+		
+		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.8.20.min.js"></script>
+		<script type="text/javascript" src="js/jquery-mousewheel-3.0.6.min.js"></script>
+		<script type="text/javascript" src="../jquery-panoramix.js"></script>
+		<script type="text/javascript" src="js/jquery-panoramix-demo.js"></script>
+	</head>
+	<body>
+		<div id="container">
+			<h3><a href="https://github.com/gonzaloalbito/jq-panoramix" target="_blank">jQuery Panoramix</a></h3>
+			<div class="content">
+				<div id="panoramix"></div>
+				<div class="code-content">
+					<h4>Code:</h4>
+<pre class="codes"><code class="code panoramix">
+var panoramix = jQuery("#panoramix").panoramix({
+	width: "100%",
+	height: "600px",
+	margin: {
+		width: 0,
+		height: 0,
+		oversize: false
+	},
+	zoom: {
+		enabled: true,
+		current: 100,
+		min: 50,
+		max: 575,
+		step: 25,
+		crop: 256
+	},
+	nav: {
+		enabled: true,
+		step: 100
+	},
+	animation: {
+		enabled: true,
+		duration: 250
+	},
+	label: {
+		title: "Panoramix Demo",
+		info: "Panoramix demo"
+	},
+	image: {
+		url: "panoramix/medulas/panoramix.jpg",
+		path: "panoramix/medulas",
+		extension: "jpg",
+		separator: "-",
+		alt: "Loading"
+	},
+	poiCommon: {
+		icon: "panoramix/poi.png",
+		iconW: 20,
+		iconH: 20,
+	},
+	pois: [
+		{
+			x: 1400,
+			y: 400,
+			label: "Test marker #1",
+			title: false,
+			content: "<div style=\"width: 200px; height: auto; border: thin solid blue; color: white; background: black\"><h4>Test marker...</h4><p>There is another for zoom>=150</p></div>",
+			action: false,
+			zoomMin: 50
+		},
+		{
+			x: 1656,
+			y: 300,
+			label: "Test marker #2",
+			title: "GitHub",
+			content: "<div style=\"width: 150px; height: auto; border: thin dotted red; color: black; background: white\">Abrir GitHub.com</div>",
+			action: "window.open('https://github.com/gonzaloalbito/jq-panoramix');",
+			zoomMin: 150
+		}
+	]
+});
+</code></pre>
+				</div>
+			</div>
+			<div class="license">
+				<p>Copyright (c) 2016 <a href="mailto:gonzalo@albito.es">Gonzalo Albito Méndez Rey</a></p>
+				<p>Licensed under <a href="https://www.gnu.org/licenses/gpl-3.0-standalone.html" target="_blank">GNU GPL 3.0</a></p>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,15 @@
+@CHARSET "UTF-8";
+body { width: 100%; min-width: 320px; height: 100%; margin: 0px; padding: 0px; font-family: sans-serif; font-size: 16px; text-align: center; background-color: #fff; }
+
+#container { width: auto; padding: 20px; }
+
+.content { margin: 40px auto; }
+
+.license { font-size: 12px; margin-top: 60px; }
+
+.codes { display: inline-block; padding: 0px 20px 20px 20px; border: 1px solid #ccc; background-color: rgba(255, 255, 255, 0.7); text-align: left; font-size: 14px; font-family: monospace; }
+
+.code-content { margin-top: 40px; }
+.code-content h4 { margin-bottom: 0px; }
+
+#panoramix { width: auto; height: 620px; margin: 50px; }
