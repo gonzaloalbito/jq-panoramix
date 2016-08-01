@@ -49,16 +49,24 @@
 		position: relative;
 		top: 0px;
 		left: 0px;
-		border: 0px;
+		border: 0px none transparent;
 		z-index: 5;
-		td img{
-			position: relative;
-			top: 0px;
-			left: 0px;
-			width: auto;
-			height: auto;
-			z-index: 6;
-		}
+        td{
+            &,img{
+		        border: 0px none transparent;
+                margin: 0px;
+                padding: 0px;
+            }
+            img{
+                display: block;
+			    position: relative;
+			    top: 0px;
+			    left: 0px;
+			    width: auto;
+			    height: auto;
+			    z-index: 6;
+		    }
+        }
 	}
 	.pois{
 		float: left;
